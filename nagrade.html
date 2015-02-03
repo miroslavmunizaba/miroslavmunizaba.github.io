@@ -23,6 +23,41 @@
     </div>
 </div>
 
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <!--<ol class="indicator"></ol>-->
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="sadrzaj">
     <div>
         <div class="pull-right text-right">
@@ -58,19 +93,37 @@
         </ul>
         <br/>
     </div>
-    <div class="clearfix">
-        <img src="img/na1.jpg" class="nagrade-slika pull-left slika"/>
-        <img src="img/na2.jpg" class="nagrade-slika pull-left slika"/>
-        <img src="img/na3.jpg" class="nagrade-slika pull-left slika"/>
-        <img src="img/na4.jpg" class="nagrade-slika pull-left slika"/>
-        <img src="img/na5.jpg" class="nagrade-slika pull-left slika"/>
-        <img src="img/na6.jpg" class="nagrade-slika pull-left slika"/>
-        <img src="img/na0.jpg" class="nagrade-slika pull-left slika"/>
-        <img src="img/na7.jpg" class="nagrade-slika pull-left slika"/>
+    <div id="links" class="clearfix">
+        <a href="img/na1lg.jpg" title="" data-gallery>
+            <img src="img/na1.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
+        <a href="img/na2lg.jpg" title="" data-gallery>
+            <img src="img/na2.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
+        <a href="img/na3lg.jpg" title="" data-gallery>
+            <img src="img/na3.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
+        <a href="img/na4lg.jpg" title="" data-gallery>
+            <img src="img/na4.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
+        <a href="img/na5lg.jpg" title="" data-gallery>
+            <img src="img/na5.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
+        <a href="img/na6lg.jpg" title="" data-gallery>
+            <img src="img/na6.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
+        <a href="img/na0lg.jpg" title="" data-gallery>
+            <img src="img/na0.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
+        <a href="img/na7lg.jpg" title="" data-gallery>
+            <img src="img/na7.jpg" class="nagrade-slika pull-left slika"/>
+        </a>
     </div>
 </div>
 
 <script src="libs/js/jquery.min.js"></script>
+<script src="libs/js/jquery.blueimp-gallery.min.js"></script>
+<script src="libs/js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 </html>

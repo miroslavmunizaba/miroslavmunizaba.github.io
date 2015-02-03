@@ -111,7 +111,7 @@ body #links a img {
     border: none;
 }
 
-html.portfolio {
+html.portfolio, html.nagrade {
     overflow-y: scroll;
 }
 
