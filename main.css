@@ -144,3 +144,9 @@ cite {
     font-size: 1.3em;
     color: white;
 }
+
+.blueimp-gallery h3.title {
+    white-space: pre-line;
+    background-color: black;
+    padding: 1px 10px;
+}
